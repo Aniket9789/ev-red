@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red-EV</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FONTicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- boxicon's -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<link rel="stylesheet" href="book.css">
+</head>
+
+<body>
+    <!-- navigationbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#"></a> -->
+            <img src="image/makeinindia.png" alt="" class="india">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">Company</a></li>
+                            <li><a class="dropdown-item" href="r&d.html">R & D</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MODELS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">EVA1.0</a></li>
+                            <li><a class="dropdown-item" href="#">BETA</a></li>
+                            <li><a class="dropdown-item" href="#">GALAXY</a></li>
+                            <li><a class="dropdown-item" href="#">SATURN</a></li>
+                            <li><a class="dropdown-item" href="#">SPARKS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">COMMING SOON</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            JOIN Redwolf-EV FAMILY
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">BOOK</a></li>
+                            <li><a class="dropdown-item" href="#">DEALERSHIP</a></li>
+                            <li><a class="dropdown-item" href="carrer.html">CAREER</a></li>
+                            <!-- <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="blog.html">BLOG</a>
+                    </li>
+                </ul>
+                <div class="div">
+                    <button class="del">DEALERSHIP</button>
+                    <button class="book">BOOK</button>
+                </div>
+                <img src="image/redwolflogo.png" alt="" style="width: 7%;">
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- main section -->
+
+    <div>
+        <div class="career-main">
+            <div class="head-box">
+                <h3>Book Your Electric Scooter</h3>
+                <span class=""></span>
+            </div>
+
+            <form class="career-form" onsubmit="return sendMsgHandler(event)">
+                <div>
+                    <label for="color">Scooter Color*</label>
+                    <select name="" id="">
+                        <option value="" disabled selected>Choose Scooter Color</option>
+                        <option value="">Yellow</option>
+                        <option value="">Red</option>
+                        <option value="">White</option>
+                        <option value="">Black</option>
+                        <option value="">Silver</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="model">Scooter Model *</label>
+                    <select name="" id="">
+                        <option value="" disabled selected>Choose Scooter Color</option>
+                        <option value="">EVA1.O</option>
+                        <option value="">BETA</option>
+                        <option value="">GALAXY</option>
+                        <option value="">SATURN</option>
+                        <option value="">SPARKS</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="username">Name*</label>
+                    <input type="text" name="name" id="username" required placeholder="Enter your name" />
+                </div>
+                <div>
+                    <label for="useremail">Email ID*</label>
+                    <input type="email" name="useremail" id="useremail" required placeholder="Enter your email id" />
+                </div>
+                <div>
+                    <label for="mobile">Mobile Number*</label>
+                    <!-- <span id="cvname"></span> -->
+                    <input type="number" name="number" id="number" required placeholder="Enter yor Contact" />
+                </div>
+                <div>
+                    <label for="address">Address*</label>
+                    <textarea name="address" id="address" required placeholder="Enter your address" rows="2"
+                        cols="50"></textarea>
+                </div>
+                <div>
+                    <label for="usermsg">Message*</label>
+                    <textarea name="usermsg" id="usermsg" required placeholder="Enter your message" rows="2"
+                        cols="50"></textarea>
+                </div>
+                <form id="emailForm">
+                    <button type="submit" class="sendbtn">SEND</button>
+                </form>
+            </form>
+        </div>
+        <!-- <div class="help-icon">
+            <p class="help-msg">Hi! How can i help you?</p>
+            <img src="./images/help-icon.png" alt="" height="120px" width="150px" class="help-img" />
+        </div> -->
+    </div>
+
+
+
+
+    <!-- /////////////////////////////////// -->
+
+
+    <!-- FOOTER -->
+    <!-- <section>Footer Example 4</section> -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <img src="image/redwolflogo.png" alt="" style="width: 40%;">
+
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Home</a>
+
+                <a href="#">Blog</a>
+
+                <a href="#">Pricing</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <!-- <p class="footer-company-name">Company Name © 2015</p> -->
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p><span>HO</span></p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 9888284777</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:info@redwolfhitech.com">info@redwolfhitech.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/RedWolfEV24" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/redwolf_ev/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/red-wolf-ev/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <i class="fa fa-motorcycle faq" aria-hidden="true" style="color: #2cb2aa;"></i>
+
+            </div>
+
+        </div>
+        <hr>
+        <footer>
+            <div class="footersecond">
+                <p>© 2024 RedWolf-EV. All Rights Reserved.</p>
+                <span style="color: #2cb2aa;">Made with ♥ remotely from Anywhere</span>
+            </div>
+        </footer>
+    </footer>
+    <!-- ///////////////// -->
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
